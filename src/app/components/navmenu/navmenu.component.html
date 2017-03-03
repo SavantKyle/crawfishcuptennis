@@ -1,0 +1,38 @@
+<ul class='nav nav-pills nav-justified navbar-static-top'>
+    <li [routerLinkActive]="['link-active']">
+        <a [routerLink]="'/home'">
+            <span class="fa fa-home"></span> Home
+        </a>
+    </li>
+    <li [routerLinkActive]="['link-active']">
+        <a [routerLink]="'the-cause'">
+            <span class="fa fa-heartbeat"></span> The Cause
+        </a>
+    </li>
+    <li [routerLinkActive]="['link-active']">
+        <a [routerLink]="'/sponsors'">
+            <span class="fa fa-star"></span> Sponsors
+        </a>
+    </li>
+    <li [routerLinkActive]="['link-active']">
+        <a [routerLink]="'/information'">
+            <span class="fa fa-info-circle"></span> Rules & Info
+        </a>
+    </li>
+    <li [routerLinkActive]="['link-active']">
+        <a [routerLink]="'/register'">
+            <span class="fa fa-check-square-o"></span> Register
+        </a>
+    </li>
+    <li [routerLinkActive]="['link-active']" class='disabled'>
+        <!--<a [routerLink]="'/#'">-->
+        <a>
+            <span class="fa fa-calendar"></span> Schedule
+        </a>
+    </li>
+    <li>
+        <a href="http://www.facebook.com/groups/crawfishcuptennis" target="_blank">
+            <span class="fa fa-facebook-square"></span> Follow Us
+        </a>
+    </li>
+</ul>
