@@ -120,7 +120,7 @@ export class RegisterComponent implements OnInit {
         const form = this.registerForm;
 
         for (const field in this.formErrors) {
-            // clear previous error message (if any) 
+            // clear previous error message (if any)
             this.formErrors[field] = '';
             const control = form.get(field);
 
@@ -138,11 +138,11 @@ export class RegisterComponent implements OnInit {
         const form = this.registerForm;
 
         for (const field in this.formErrors) {
-            // clear previous error message (if any) 
+            // clear previous error message (if any)
             this.formErrors[field] = '';
             const control = form.get(field);
 
-            // Because the html validation messages have *ngIf restricting display to only fields that have been touched. 
+            // Because the html validation messages have *ngIf restricting display to only fields that have been touched.
             // Force all fields being validated to TOUCHED
             control.markAsTouched();
 

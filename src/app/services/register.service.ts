@@ -26,7 +26,7 @@ export class RegisterService {
         this.http.post(this.registerTeamUrl, bodyString, options).subscribe(
             (response: Response) => this.registerResponse = response.json().status,
             (error: any) => this.registerResponse = error.message
-        )
+        );
 
         return this.registerResponse;
     }
@@ -89,7 +89,7 @@ export class RegisterService {
                 cellPhone: r.cellPhone7,
                 email: r.email7,
                 ntrp: r.ntrp7
-            })
+            });
         }
 
         if (p8Visible) {
@@ -99,7 +99,7 @@ export class RegisterService {
                 cellPhone: r.cellPhone8,
                 email: r.email8,
                 ntrp: r.ntrp8
-            })
+            });
         }
 
         return team;
