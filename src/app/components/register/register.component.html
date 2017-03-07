@@ -5,10 +5,19 @@
         <fieldset>
             <div class="col-md-12">
                 <div class="form-group text-center">
-                    <div class="col-md-4 col-md-offset-2" [ngClass]="{'has-error': formErrors.teamName}">
+                    <div class="col-md-4" [ngClass]="{'has-error': formErrors.gender}">
+                        <div><label class="control-label" for="gender">Gender</label></div>
+                        <label class="radio-inline">
+                            <input type="radio" formControlName="gender" name="gender" id="genderMale" value="male">Male
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" formControlName="gender" name="gender" id="genderFemale" value="female">Female
+                        </label>
+                    </div>
+                    <div class="col-md-4" [ngClass]="{'has-error': formErrors.teamName}">
                         <label class="control-label" for="teamName">Team Name</label>
-                        <input class="form-control text-center" id="teamName" type="text" placeholder="Team Name (required)" formControlName="teamName" (blur)="setValidationMessage()" />
-
+                        <input class="form-control text-center" id="teamName" type="text" placeholder="Team Name (required)" formControlName="teamName"
+                            (blur)="setValidationMessage()" />
                     </div>
                     <div class="col-md-4" [ngClass]="{'has-error': formErrors.division}">
                         <div><label class="control-label" for="division">Division</label></div>
@@ -28,16 +37,20 @@
             <div class="col-md-4 bg-info well-lg">
                 <h3 class="text-center">Player 1 (Captain)</h3>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.firstName1}">
-                    <input class="form-control text-center input-sm" id="firstName1" type="text" placeholder="First Name (required)" formControlName="firstName1" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="firstName1" type="text" placeholder="First Name (required)" formControlName="firstName1"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.lastName1}">
-                    <input class="form-control text-center input-sm" id="lastName1" type="text" placeholder="Last Name (required)" formControlName="lastName1" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="lastName1" type="text" placeholder="Last Name (required)" formControlName="lastName1"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.cellPhone1}">
-                    <input class="form-control text-center input-sm" id="cellPhone1" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone1" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="cellPhone1" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone1"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.email1}">
-                    <input class="form-control text-center input-sm" id="email1" type="text" placeholder="Email (required)" formControlName="email1" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="email1" type="text" placeholder="Email (required)" formControlName="email1"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group" [ngClass]="{'has-error': formErrors.ntrp1}">
                     <div class="text-center"><label for="ntrp">2017 NTRP Rating</label></div>
@@ -61,16 +74,20 @@
             <div class="col-md-4 bg-success well-lg">
                 <h3 class="text-center">Player 2</h3>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.firstName2}">
-                    <input class="form-control text-center input-sm" id="firstName2" type="text" placeholder="First Name (required)" formControlName="firstName2" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="firstName2" type="text" placeholder="First Name (required)" formControlName="firstName2"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.lastName2}">
-                    <input class="form-control text-center input-sm" id="lastName2" type="text" placeholder="Last Name (required)" formControlName="lastName2" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="lastName2" type="text" placeholder="Last Name (required)" formControlName="lastName2"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.cellPhone2}">
-                    <input class="form-control text-center input-sm" id="cellPhone2" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone2" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="cellPhone2" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone2"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.email2}">
-                    <input class="form-control text-center input-sm" id="email2" type="text" placeholder="Email (required)" formControlName="email2" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="email2" type="text" placeholder="Email (required)" formControlName="email2"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group" [ngClass]="{'has-error': formErrors.ntrp2}">
                     <div class="text-center"><label for="ntrp">2017 NTRP Rating</label></div>
@@ -94,16 +111,20 @@
             <div class="col-md-4 bg-info well-lg">
                 <h3 class="text-center">Player 3</h3>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.firstName3}">
-                    <input class="form-control text-center input-sm" id="firstName3" type="text" placeholder="First Name (required)" formControlName="firstName3" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="firstName3" type="text" placeholder="First Name (required)" formControlName="firstName3"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.lastName3}">
-                    <input class="form-control text-center input-sm" id="lastName3" type="text" placeholder="Last Name (required)" formControlName="lastName3" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="lastName3" type="text" placeholder="Last Name (required)" formControlName="lastName3"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.cellPhone3}">
-                    <input class="form-control text-center input-sm" id="cellPhone3" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone3" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="cellPhone3" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone3"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.email3}">
-                    <input class="form-control text-center input-sm" id="email3" type="text" placeholder="Email (required)" formControlName="email3" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="email3" type="text" placeholder="Email (required)" formControlName="email3"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group" [ngClass]="{'has-error': formErrors.ntrp3}">
                     <div class="text-center"><label for="ntrp">2017 NTRP Rating</label></div>
@@ -127,16 +148,20 @@
             <div class="col-md-4 bg-success well-lg">
                 <h3 class="text-center">Player 4</h3>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.firstName4}">
-                    <input class="form-control text-center input-sm" id="firstName4" type="text" placeholder="First Name (required)" formControlName="firstName4" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="firstName4" type="text" placeholder="First Name (required)" formControlName="firstName4"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.lastName4}">
-                    <input class="form-control text-center input-sm" id="lastName4" type="text" placeholder="Last Name (required)" formControlName="lastName4" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="lastName4" type="text" placeholder="Last Name (required)" formControlName="lastName4"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.cellPhone4}">
-                    <input class="form-control text-center input-sm" id="cellPhone4" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone4" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="cellPhone4" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone4"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.email4}">
-                    <input class="form-control text-center input-sm" id="email4" type="text" placeholder="Email (required)" formControlName="email4" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="email4" type="text" placeholder="Email (required)" formControlName="email4"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group" [ngClass]="{'has-error': formErrors.ntrp4}">
                     <div class="text-center"><label for="ntrp">2017 NTRP Rating</label></div>
@@ -159,16 +184,20 @@
             <div class="col-md-4 bg-info well-lg">
                 <h3 class="text-center">Player 5</h3>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.firstName5}">
-                    <input class="form-control text-center input-sm" id="firstName5" type="text" placeholder="First Name (required)" formControlName="firstName5" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="firstName5" type="text" placeholder="First Name (required)" formControlName="firstName5"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.lastName5}">
-                    <input class="form-control text-center input-sm" id="lastName5" type="text" placeholder="Last Name (required)" formControlName="lastName5" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="lastName5" type="text" placeholder="Last Name (required)" formControlName="lastName5"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.cellPhone5}">
-                    <input class="form-control text-center input-sm" id="cellPhone5" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone5" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="cellPhone5" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone5"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.email5}">
-                    <input class="form-control text-center input-sm" id="email5" type="text" placeholder="Email (required)" formControlName="email5" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="email5" type="text" placeholder="Email (required)" formControlName="email5"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group" [ngClass]="{'has-error': formErrors.ntrp5}">
                     <div class="text-center"><label for="ntrp">2017 NTRP Rating</label></div>
@@ -192,16 +221,20 @@
             <div class="col-md-4 bg-success well-lg">
                 <h3 class="text-center">Player 6</h3>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.firstName6}">
-                    <input class="form-control text-center input-sm" id="firstName6" type="text" placeholder="First Name (required)" formControlName="firstName6" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="firstName6" type="text" placeholder="First Name (required)" formControlName="firstName6"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.lastName6}">
-                    <input class="form-control text-center input-sm" id="lastName6" type="text" placeholder="Last Name (required)" formControlName="lastName6" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="lastName6" type="text" placeholder="Last Name (required)" formControlName="lastName6"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.cellPhone6}">
-                    <input class="form-control text-center input-sm" id="cellPhone6" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone6" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="cellPhone6" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone6"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.email6}">
-                    <input class="form-control text-center input-sm" id="email6" type="text" placeholder="Email (required)" formControlName="email6" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="email6" type="text" placeholder="Email (required)" formControlName="email6"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group" [ngClass]="{'has-error': formErrors.ntrp6}">
                     <div class="text-center"><label for="ntrp">2017 NTRP Rating</label></div>
@@ -225,16 +258,20 @@
             <div class="col-md-4 bg-info well-lg" [hidden]="hideP7">
                 <h3 class="text-center">Player 7</h3>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.firstName7}">
-                    <input class="form-control text-center input-sm" id="firstName7" type="text" placeholder="First Name (required)" formControlName="firstName7" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="firstName7" type="text" placeholder="First Name (required)" formControlName="firstName7"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.lastName7}">
-                    <input class="form-control text-center input-sm" id="lastName7" type="text" placeholder="Last Name (required)" formControlName="lastName7" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="lastName7" type="text" placeholder="Last Name (required)" formControlName="lastName7"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.cellPhone7}">
-                    <input class="form-control text-center input-sm" id="cellPhone7" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone7" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="cellPhone7" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone7"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.email7}">
-                    <input class="form-control text-center input-sm" id="email7" type="text" placeholder="Email (required)" formControlName="email7" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="email7" type="text" placeholder="Email (required)" formControlName="email7"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group">
                     <div class="text-center"><label for="ntrp">2017 NTRP Rating</label></div>
@@ -259,16 +296,20 @@
             <div class="col-md-4 bg-success well-lg" id="player8" [hidden]="hideP8">
                 <h3 class="text-center">Player 8</h3>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.firstName8}">
-                    <input class="form-control text-center input-sm" id="firstName8" type="text" placeholder="First Name (required)" formControlName="firstName8" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="firstName8" type="text" placeholder="First Name (required)" formControlName="firstName8"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.lastName8}">
-                    <input class="form-control text-center input-sm" id="lastName8" type="text" placeholder="Last Name (required)" formControlName="lastName8" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="lastName8" type="text" placeholder="Last Name (required)" formControlName="lastName8"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.cellPhone8}">
-                    <input class="form-control text-center input-sm" id="cellPhone8" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone8" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="cellPhone8" type="text" placeholder="Cell Phone (required)" formControlName="cellPhone8"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group text-center" [ngClass]="{'has-error': formErrors.email8}">
-                    <input class="form-control text-center input-sm" id="email8" type="text" placeholder="Email (required)" formControlName="email8" (blur)="setValidationMessage()" />
+                    <input class="form-control text-center input-sm" id="email8" type="text" placeholder="Email (required)" formControlName="email8"
+                        (blur)="setValidationMessage()" />
                 </div>
                 <div class="form-group">
                     <div class="text-center"><label for="ntrp">2017 NTRP Rating</label></div>
@@ -296,7 +337,9 @@
             </div>
 
             <div class="col-md-4 col-md-offset-4 text-center bg-warning" *ngIf="!registerForm.valid && registerForm.touched" style="margin-bottom:1em;">
+                <span class="text-danger center-block" *ngIf="formErrors.gender">{{formErrors.gender}}</span>
                 <span class="text-danger center-block" *ngIf="formErrors.teamName">{{formErrors.teamName}}</span>
+                <span class="text-danger center-block" *ngIf="formErrors.division">{{formErrors.division}}</span>
                 <span class="text-danger center-block" *ngIf="formErrors.firstName1">{{formErrors.firstName1}}</span>
                 <span class="text-danger center-block" *ngIf="formErrors.lastName1">{{formErrors.lastName1}}</span>
                 <span class="text-danger center-block" *ngIf="formErrors.cellPhone1">{{formErrors.cellPhone1}}</span>

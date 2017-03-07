@@ -67,6 +67,7 @@ export class RegisterComponent implements OnInit {
         this.registerForm = this.fb.group({
             teamName: [this.team.teamName, Validators.required],
             division: [this.team.division, Validators.required],
+            gender: [this.team.gender, Validators.required],
             firstName1: [this.team.firstName1, Validators.required],
             lastName1: [this.team.lastName1, Validators.required],
             cellPhone1: [this.team.cellPhone1, Validators.required],
@@ -157,6 +158,7 @@ export class RegisterComponent implements OnInit {
     formErrors = {
         'teamName': '',
         'division': '',
+        'gender': '',
         'firstName1': '',
         'lastName1': '',
         'cellPhone1': '',
@@ -192,6 +194,7 @@ export class RegisterComponent implements OnInit {
     validationMessages = {
         'teamName': { 'required': 'Please enter a team name.' },
         'division': { 'required': 'Please select a division for your team.' },
+        'gender': { 'required': 'Please select a gender.' },
         'firstName1': { 'required': 'Please enter a first name for Player 1.' },
         'lastName1': { 'required': 'Please enter a last name for Player 1.' },
         'cellPhone1': { 'required': 'Please enter a cell phone number for Player 1.' },

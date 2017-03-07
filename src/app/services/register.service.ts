@@ -11,6 +11,8 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class RegisterService {
+    // private registerUrl = '/api/register';
+    // private registerTeamUrl = '/api/register/team';
     private registerUrl = 'https://crawfishcuptennis.com/api/register';
     private registerTeamUrl = 'https://crawfishcuptennis.com/api/register/team';
     registerResponse: string;
@@ -33,6 +35,7 @@ export class RegisterService {
         const team: ITeam = {
             teamName: r.teamName,
             division: r.division,
+            gender: r.gender,
             players: [
                 {
                     firstName: r.firstName1,

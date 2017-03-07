@@ -2,6 +2,7 @@ export class Team {
     constructor(
         public teamName = null,
         public division = null,
+        public gender = null,
         public firstName1 = null,
         public lastName1 = null,
         public cellPhone1 = null,

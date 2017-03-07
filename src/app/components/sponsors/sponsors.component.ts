@@ -15,6 +15,8 @@ export class SponsorsComponent implements OnInit {
   theLondonerLogo: string;
   louisianaFishFryLogo: string;
   coxLogo: string;
+  theChimesLogo: string;
+  flemingsLogo: string;
 
   constructor() { }
 
@@ -28,5 +30,7 @@ export class SponsorsComponent implements OnInit {
     this.theLondonerLogo = '../../../assets/theLondonerLogo.jpg';
     this.louisianaFishFryLogo = '../../../assets/louisianaFishFryLogo.jpg';
     this.coxLogo = '../../../assets/coxLogo.png';
+    this.theChimesLogo = '../../../assets/theChimesLogo.jpg';
+    this.flemingsLogo = '../../../assets/flemingsLogo.jpg';
   }
 }
