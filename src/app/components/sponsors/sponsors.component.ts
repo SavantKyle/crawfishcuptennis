@@ -17,6 +17,7 @@ export class SponsorsComponent implements OnInit {
   coxLogo: string;
   theChimesLogo: string;
   flemingsLogo: string;
+  mellowMushroomLogo: string;
 
   constructor() { }
 
@@ -32,5 +33,6 @@ export class SponsorsComponent implements OnInit {
     this.coxLogo = '../../../assets/coxLogo.png';
     this.theChimesLogo = '../../../assets/theChimesLogo.jpg';
     this.flemingsLogo = '../../../assets/flemingsLogo.jpg';
+    this.mellowMushroomLogo = '../../../assets/mellowMushroomLogo.jpg';
   }
 }

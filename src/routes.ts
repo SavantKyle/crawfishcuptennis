@@ -13,7 +13,7 @@ export const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'sponsors', component: SponsorsComponent },
     { path: 'information', component: InformationComponent },
-    { path: 'register', component: RegisterComponent },
+    // { path: 'register', component: RegisterComponent },
     { path: 'the-cause', component: TheCauseComponent },
     { path: 'register-success', component: RegisterSuccessComponent },
     { path: '', redirectTo: 'home', pathMatch: 'full' },
