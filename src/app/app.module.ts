@@ -10,6 +10,7 @@ import { SponsorsComponent } from './components/sponsors/sponsors.component';
 import { TheCauseComponent } from './components/the-cause/the-cause.component';
 import { InformationComponent } from './components/information/information.component';
 import { RegisterComponent } from './components/register/register.component';
+import { ScheduleComponent } from './components/schedule/schedule.component';
 import { NavmenuComponent } from './components/navmenu/navmenu.component';
 
 import { StripePaymentService } from './services/stripepayment.service';
@@ -17,6 +18,7 @@ import { RegisterService } from './services/register.service';
 
 import { routes } from '../Routes';
 import { RegisterSuccessComponent } from './components/register-success/register-success.component';
+
 
 @NgModule({
     declarations: [
@@ -27,7 +29,8 @@ import { RegisterSuccessComponent } from './components/register-success/register
         RegisterComponent,
         NavmenuComponent,
         RegisterSuccessComponent,
-        SponsorsComponent
+        SponsorsComponent,
+        ScheduleComponent
     ],
     imports: [
         BrowserModule,
